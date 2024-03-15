@@ -64,7 +64,7 @@ class _HomeBodyState extends State<HomeBody> {
                       shrinkWrap: true,
                       primary: false,
                       scrollDirection: Axis.horizontal,
-                      itemCount: products?.length,
+                      itemCount: categories.length,
                       itemBuilder: (context, index) => GestureDetector(
                             onTap: () {
                               setState(() {
@@ -82,7 +82,7 @@ class _HomeBodyState extends State<HomeBody> {
                                       Radius.circular(8)),
                                   color: current == index
                                       ? Colors.black
-                                      : kMain01Color,
+                                      : kMain02Color,
                                 ),
                                 // height: 60,
                                 child: Text(

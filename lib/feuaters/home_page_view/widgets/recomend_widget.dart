@@ -16,7 +16,7 @@ class RecomendationsWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0),
           child: SizedBox(
-            height: 300,
+            height: 360,
             child: Expanded(
               child: ListView.builder(
                   itemCount: 5,
@@ -73,7 +73,17 @@ class RecommendCard extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.grey[600]),
           ),
-          const PriceTag()
+          const PriceTag(),
+          MaterialButton(
+            minWidth: 150,
+            onPressed: () {},
+            shape: const OutlineInputBorder(
+                borderRadius: BorderRadius.all(Radius.circular(8))),
+            child: Text(
+              'Add to Bag',
+              style: TextStyle(color: Colors.grey[700]),
+            ),
+          )
         ],
       ),
     );
@@ -121,7 +131,7 @@ class PriceTag extends StatelessWidget {
                 color: Colors.grey[600],
                 decoration: TextDecoration.lineThrough),
           ),
-        )
+        ),
       ],
     );
   }
