@@ -1,4 +1,4 @@
-import 'package:fake_api_store/feuaters/home_page_view/presentation/home_view.dart';
+import 'package:fake_api_store/feuaters/auth/log_in_page/presentation/log_in_page_view.dart';
 import 'package:flutter/material.dart';
 
 class SplashBody extends StatefulWidget {
@@ -16,11 +16,10 @@ class _SplashBodyState extends State<SplashBody> {
   }
 
   goToNextView() {
-    Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const HomeView()));
-      
-    });
+    Future.delayed(
+        const Duration(seconds: 3),
+        () => Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: ((context) => const LogInView()))));
   }
 
   @override

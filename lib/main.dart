@@ -1,7 +1,5 @@
-import 'package:fake_api_store/feuaters/home_page_view/presentation/home_view.dart';
+import 'package:fake_api_store/splash_screen/presentation/splash_screen_view.dart';
 import 'package:flutter/material.dart';
-
-import 'splash_screen/presentation/splash_screen_view.dart';
 
 void main() {
   runApp(const MyApp());

@@ -7,7 +7,6 @@ class SearchBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size / 5;
 
     return const Row(
       children: [
